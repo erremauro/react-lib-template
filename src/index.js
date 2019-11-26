@@ -1,5 +1,1 @@
-import MyComponent from './components/MyComponent';
-
-export default {
-	MyComponent
-}
+export { default as MyComponent } from './components/MyComponent';
