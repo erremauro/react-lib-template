@@ -16,7 +16,7 @@ class MyComponent extends Component {
       <div className="MyComponent">
         <h1># MyComponent</h1>
       </div>
-    );
+    )
   }
 }
 
