@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import './MyComponent.css';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import './MyComponent.css'
 
 class MyComponent extends Component {
   static propTypes = {
-    // define your prop types here
+    children: PropTypes.any
   };
 
   static defaultProps = {
@@ -12,12 +12,12 @@ class MyComponent extends Component {
   };
 
   render() {
-    return(
-      <div className="MyComponent">
-        <h1># MyComponent</h1>
+    return (
+      <div className='MyComponent'>
+        {this.props.children}
       </div>
     )
   }
 }
 
-export default MyComponent;
+export default MyComponent
